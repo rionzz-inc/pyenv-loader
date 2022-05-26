@@ -7,7 +7,7 @@ with open('README.md') as readme_file:
 
 setup(
 	name='pyenv-loader',
-	version='0.2',
+	version='0.3',
 	license='MIT',
 	author='Prakash Leon Mishra',
 	author_email='dev.leonmishra@gmail.com',
@@ -15,8 +15,8 @@ setup(
 	long_description=long_desc,
 	long_description_content_type="text/markdown",
 	keywords='Python env loader, django configuration loader, flask config loader',
-	package_dir={"": "pyenv_loader"},
-	packages=find_packages(where="pyenv_loader"),
+	package_dir={"": "src"},
+	packages=find_packages(where="src"),
 	python_requires=">=3.0",
 	url='https://github.com/rionzz-inc/pyenv-loader',
 	# download_url='https://github.com/user/reponame/archive/v_01.tar.gz',  # I explain this
