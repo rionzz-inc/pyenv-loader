@@ -58,10 +58,10 @@ class ConfigVar(object):
 					str(item).strip().split(kv_sep)[1]
 				for item in lst}
 
-	def path(self, default='', joinpath: str = None):
+	def as_path(self, default='', joinpath: str = None):
 		if joinpath is not None:
-			return os.path.join(joinpath, self.value(default=default))
-		return self.value(default=default)
+			return os.path.join(joinpath, self.as_str(default=default))
+		return self.as_str(default=default)
 
 
 class Config(object, metaclass=Singleton):

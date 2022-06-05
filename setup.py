@@ -7,7 +7,7 @@ with open('README.md') as readme_file:
 
 setup(
 	name='pyenv-loader',
-	version='0.4',
+	version='0.5',
 	license='MIT',
 	author='Prakash Leon Mishra',
 	author_email='dev.leonmishra@gmail.com',
